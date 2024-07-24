@@ -37,7 +37,7 @@ let renderScreen = () => {
     list.innerHTML = ''
     expenceData.map((item, index) => {
         list.innerHTML += `
-        <li>${item.expence} ${item.description} <button onclick='deleteBtn(${index})'>Delete</button><button onclick='editBtn(${index})'>Edit</button></li>
+        <li class='textlarg d-flex mt-3 justify-content-between'>${item.expence} <div>${item.description}</div> <div><button onclick='deleteBtn(${index})' class='btn btn-danger'>Delete</button><button onclick='editBtn(${index})' class='btn btn-primary'>Edit</button></div></li>
         `
     })
 
