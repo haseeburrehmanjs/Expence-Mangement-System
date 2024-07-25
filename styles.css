@@ -1,0 +1,48 @@
+/* Gradient background for the body */
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+}
+
+/* Styling for the header */
+h1 {
+    color: #343a40;
+}
+
+/* Card styling to match gradient background */
+.card {
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Custom styling for the table */
+.table {
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+
+.table thead th {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+.btn-primary:hover {
+    background-color: #ff5a4a;
+    border-color: #ff5a4a;
+}
