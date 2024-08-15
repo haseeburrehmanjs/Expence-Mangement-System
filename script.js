@@ -16,6 +16,7 @@ let renderScreen = () => {
       <td>${item.expenseAmount}</td>
       <td>
         <button class="btn btn-danger btn-sm" onclick="deleteExpense(${index})">Delete</button>
+        <button class="btn btn-danger btn-sm" onclick="edit(${index})">Edit</button>
       </td>
     `
     })
@@ -38,5 +39,19 @@ expenseForm.addEventListener('submit', event => {
 
 function deleteExpense(index) {
     expence.splice(index, 1)
+    renderScreen()
+}
+
+
+function edit(index){
+    let newExpence = prompt('enter new expence', expence[index].expenseName)
+    let newDescription = prompt('enter new descriptio', expence[index].expenseAmount)
+
+    if(newExpence && newExpence.trim() !== ''){
+        expence[index].expenseName = newExpence
+    }
+    if(newDescription && newDescription.trim() !== ''){
+        expence[index].expenseAmount = newDescription
+    }
     renderScreen()
 }
